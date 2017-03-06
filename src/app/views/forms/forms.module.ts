@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { SharedModule } from '../../shared/shared.module';
+
 import { FormsRoutingModule } from './forms-routing.module';
+
 import { HomeComponent } from './home/home.component';
+import { InitialComponent } from './initialform/initial.component';
 
 @NgModule({
   imports: [
     CommonModule,
+    SharedModule,
     FormsRoutingModule
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent, InitialComponent]
 })
 export class FormsModule { }
